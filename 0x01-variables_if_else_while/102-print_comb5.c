@@ -6,23 +6,24 @@
  */
 int main(void)
 {
-	int c, d;
+	int i, j;
 
-	for (c = 0; c <= 99; c++)
+	for (i = 0; i <= 99; i++)
 	{
-	for (d = c; d <= 99; d++) 
+	for (j = i; j <= 99; j++)
 	{
-		putchar((c / 10) + '0');
-		putchar((c % 10) + '0');
+		putchar((i / 10) + '0');
+		putchar((i % 10) + '0');
 		putchar(' ');
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-	if (c != 99 || d != 99)
-	{
-		putchar(',');
-		putchar(' ');
+		putchar((j / 10) + '0');
+		putchar((j % 10) + '0');
+		if (i != 99 || j != 99)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	}
-	}
+
 	return (0);
 }
