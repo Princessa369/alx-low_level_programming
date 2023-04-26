@@ -17,15 +17,11 @@ int main(void)
 		{
 			sum += b;
 		}
+		int c = a + b;
 
-	int c = a + b;
-	a = b;
-	b = c;
+		a = b;
+		b = c;
 	}
-
-	puts("The sum of even-valued terms in the Fibonacci sequence up to 4000000 is:");
-
-	printf("%d\n", sum);
-
-	return (0);
+puts("The sum of even-valued terms up to 4,000,000 is:");
+return (0);
 }
