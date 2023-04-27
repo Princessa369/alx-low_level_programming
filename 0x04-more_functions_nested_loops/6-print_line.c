@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_line - draw a diagonal line
+ * print_line - draw a straight line
  * @n: number of times '_' char is printed
+ *Return: \n if n is 0 or less
  */
 
 void print_line(int n)
