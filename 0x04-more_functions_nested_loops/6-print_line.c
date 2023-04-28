@@ -3,7 +3,6 @@
 /**
  * print_line - draw a straight line
  * @n: number of times '_' char is printed
- *Return: \n if n is 0 or less
  */
 
 void print_line(int n)
@@ -12,11 +11,14 @@ void print_line(int n)
 	{
 	_putchar('\n');
 	}
-	char i;
+	else
+	{
+	int i;
 
-for (i = '0'; i < 'n'; i++)
+for (i = 1; i <= n; i++)
 {
 _putchar('_');
 }
 _putchar('\n');
+}
 }
