@@ -7,21 +7,20 @@
 
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int sum = 0;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	float tot_sum;
 
-	while (b <= 4000000)
+	while (1)
 	{
-		if (b % 2 == 0)
-		{
-			sum += b;
-		}
-		int c = a + b;
+	sum = fib1 + fib2;
+	if (sum > 4000000)
+		break;
+	if ((sum % 2) == 0)
+	tot_sum += sum;
 
-		a = b;
-		b = c;
+	fib1 = fib2;
+	fib2 = sum;
 	}
-puts("The sum of even-valued terms up to 4,000,000 is:");
-return (0);
+	printf("%.0f\n", tot_sum);
+	return (0);
 }
