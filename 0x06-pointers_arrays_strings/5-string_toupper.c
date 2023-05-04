@@ -6,7 +6,7 @@
  * Return: char
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
 	int k;
 
@@ -17,5 +17,5 @@ char *string_toupper(char *)
 		n[k] = n[k] - 32;
 	k++;
 	}
-	return (0);
+	return (n);
 }
