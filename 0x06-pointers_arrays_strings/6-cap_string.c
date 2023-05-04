@@ -6,7 +6,7 @@
  * Return: pointer to string
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int p = 0;
 
@@ -14,7 +14,7 @@ char *cap_string(char *)
 	{
 	while (!(str[p] >= 'a' && str[p] <= 'z'))
 		p++;
-	if (str[p - 1] == ' ' ||
+if (str[p - 1] == ' ' ||
 	str[p - 1] == '\t' ||
 	str[p - 1] == '\n' ||
 	str[p - 1] == ',' ||
