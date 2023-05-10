@@ -30,6 +30,6 @@ int actual_sqrt_recursion(int n, int i)
 	if ((i * i) == n)
 		return (i);
 	if (i == n / 2)
-		return (-1);
+		return (1);
 	return (actual_sqrt_recursion(n, i + 1));
 }
