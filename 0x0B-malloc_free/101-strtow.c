@@ -56,7 +56,7 @@ matrix = (char **) malloc(sizeof(char *) * (word + 1));
 	{
 	end = j;
 	tmp = (char *) malloc(sizeof(char) * (m + 1));
-	if (tmp == NULL)
+if (tmp == NULL)
 return (NULL);
 while (beg < end)
 *tmp++ = str[beg++];
