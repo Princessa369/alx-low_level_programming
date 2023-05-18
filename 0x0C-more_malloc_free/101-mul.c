@@ -77,10 +77,10 @@ int main(int argc, char *argv[])
 	{
 	dig1 = s1[len1] - '0';
 	bet = 0;
-	for (len2 = _strlen[s2] - 1; len2 >= 0; len2--)
+	for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 	{
 	dig2 = s2[len2] - '0';
-	bet += res[len1 + len2 + 1](dig1 * dig2);
+	bet += res[len1 + len2 + 1] + (dig1 * dig2);
 	res[len1 + len2 + 1] = bet % 10;
 	bet /= 10;
 	}

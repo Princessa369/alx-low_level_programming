@@ -6,7 +6,7 @@
  * Return: 1 if true, 0 if false, -1 on error
  */
 
-int_putchar(char c)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
