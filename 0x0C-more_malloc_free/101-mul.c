@@ -95,6 +95,7 @@ int main(int argc, char *argv[])
 	_putchar(res[j] + '0');
 	}
 	if (!a)
+	_putchar('0');
 	_putchar('\n');
 	free(res);
 	return (0);
